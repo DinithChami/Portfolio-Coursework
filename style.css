@@ -1,0 +1,13 @@
+:root {
+    --primary: #4f46e5;
+    --dark: #111827;
+}
+
+.navbar {
+    background-color: var(--primary) !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: white !important;
+}
