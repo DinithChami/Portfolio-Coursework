@@ -56,3 +56,32 @@
     font-size: 0.85rem;
     margin-bottom: 6px;
 }
+
+/* dark light mode  */
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+}
+
+[data-theme="dark"] {
+    --bg: #121212;
+    --text: #f1f1f1;
+}
+
+[data-theme="dark"] body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+[data-theme="dark"] .bg-body {
+    background: #1e1e1e !important;
+}
+
+[data-theme="dark"] .card {
+    background: #2a2a2a;
+    color: #f1f1f1;
+}
+
+body {
+    transition: background 0.3s ease, color 0.3s ease;
+}
